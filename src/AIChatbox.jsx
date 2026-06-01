@@ -34,7 +34,7 @@ export default function AIChatbox({ messages, setMessages }) {
     }));
 
     try {
-     const response = await fetch('https://abundant-creation-production-fe59.up.railway.app/api/ai-chat', {
+      const response = await fetch('http://localhost:8000/api/ai-chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
